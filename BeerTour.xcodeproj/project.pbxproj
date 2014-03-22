@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09BD22B118DD2B940086369A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BD22B018DD2B940086369A /* Foundation.framework */; };
+		09BD22B318DD2B940086369A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BD22B218DD2B940086369A /* CoreGraphics.framework */; };
+		09BD22B518DD2B940086369A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BD22B418DD2B940086369A /* UIKit.framework */; };
+		09BD22BB18DD2B940086369A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BD22B918DD2B940086369A /* InfoPlist.strings */; };
+		09BD22BD18DD2B940086369A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD22BC18DD2B940086369A /* main.m */; };
+		09BD22C118DD2B940086369A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD22C018DD2B940086369A /* AppDelegate.m */; };
+		09BD22C418DD2B940086369A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BD22C218DD2B940086369A /* Main.storyboard */; };
+		09BD22C718DD2B940086369A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD22C618DD2B940086369A /* FirstViewController.m */; };
+		09BD22CA18DD2B940086369A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD22C918DD2B940086369A /* SecondViewController.m */; };
+		09BD22CC18DD2B940086369A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BD22CB18DD2B940086369A /* Images.xcassets */; };
+		09BD22D318DD2B940086369A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BD22D218DD2B940086369A /* XCTest.framework */; };
+		09BD22D418DD2B940086369A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BD22B018DD2B940086369A /* Foundation.framework */; };
+		09BD22D518DD2B940086369A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BD22B418DD2B940086369A /* UIKit.framework */; };
+		09BD22DD18DD2B940086369A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BD22DB18DD2B940086369A /* InfoPlist.strings */; };
+		09BD22DF18DD2B940086369A /* BeerTourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD22DE18DD2B940086369A /* BeerTourTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09BD22D618DD2B940086369A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BD22A518DD2B940086369A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BD22AC18DD2B940086369A;
+			remoteInfo = BeerTour;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09BD22AD18DD2B940086369A /* BeerTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BD22B018DD2B940086369A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09BD22B218DD2B940086369A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09BD22B418DD2B940086369A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09BD22B818DD2B940086369A /* BeerTour-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerTour-Info.plist"; sourceTree = "<group>"; };
+		09BD22BA18DD2B940086369A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09BD22BC18DD2B940086369A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09BD22BE18DD2B940086369A /* BeerTour-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeerTour-Prefix.pch"; sourceTree = "<group>"; };
+		09BD22BF18DD2B940086369A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09BD22C018DD2B940086369A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09BD22C318DD2B940086369A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09BD22C518DD2B940086369A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		09BD22C618DD2B940086369A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		09BD22C818DD2B940086369A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		09BD22C918DD2B940086369A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		09BD22CB18DD2B940086369A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		09BD22D118DD2B940086369A /* BeerTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BD22D218DD2B940086369A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		09BD22DA18DD2B940086369A /* BeerTourTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerTourTests-Info.plist"; sourceTree = "<group>"; };
+		09BD22DC18DD2B940086369A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09BD22DE18DD2B940086369A /* BeerTourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerTourTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09BD22AA18DD2B940086369A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BD22B318DD2B940086369A /* CoreGraphics.framework in Frameworks */,
+				09BD22B518DD2B940086369A /* UIKit.framework in Frameworks */,
+				09BD22B118DD2B940086369A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BD22CE18DD2B940086369A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BD22D318DD2B940086369A /* XCTest.framework in Frameworks */,
+				09BD22D518DD2B940086369A /* UIKit.framework in Frameworks */,
+				09BD22D418DD2B940086369A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09BD22A418DD2B940086369A = {
+			isa = PBXGroup;
+			children = (
+				09BD22B618DD2B940086369A /* BeerTour */,
+				09BD22D818DD2B940086369A /* BeerTourTests */,
+				09BD22AF18DD2B940086369A /* Frameworks */,
+				09BD22AE18DD2B940086369A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09BD22AE18DD2B940086369A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09BD22AD18DD2B940086369A /* BeerTour.app */,
+				09BD22D118DD2B940086369A /* BeerTourTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09BD22AF18DD2B940086369A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09BD22B018DD2B940086369A /* Foundation.framework */,
+				09BD22B218DD2B940086369A /* CoreGraphics.framework */,
+				09BD22B418DD2B940086369A /* UIKit.framework */,
+				09BD22D218DD2B940086369A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09BD22B618DD2B940086369A /* BeerTour */ = {
+			isa = PBXGroup;
+			children = (
+				09BD22BF18DD2B940086369A /* AppDelegate.h */,
+				09BD22C018DD2B940086369A /* AppDelegate.m */,
+				09BD22C218DD2B940086369A /* Main.storyboard */,
+				09BD22C518DD2B940086369A /* FirstViewController.h */,
+				09BD22C618DD2B940086369A /* FirstViewController.m */,
+				09BD22C818DD2B940086369A /* SecondViewController.h */,
+				09BD22C918DD2B940086369A /* SecondViewController.m */,
+				09BD22CB18DD2B940086369A /* Images.xcassets */,
+				09BD22B718DD2B940086369A /* Supporting Files */,
+			);
+			path = BeerTour;
+			sourceTree = "<group>";
+		};
+		09BD22B718DD2B940086369A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09BD22B818DD2B940086369A /* BeerTour-Info.plist */,
+				09BD22B918DD2B940086369A /* InfoPlist.strings */,
+				09BD22BC18DD2B940086369A /* main.m */,
+				09BD22BE18DD2B940086369A /* BeerTour-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09BD22D818DD2B940086369A /* BeerTourTests */ = {
+			isa = PBXGroup;
+			children = (
+				09BD22DE18DD2B940086369A /* BeerTourTests.m */,
+				09BD22D918DD2B940086369A /* Supporting Files */,
+			);
+			path = BeerTourTests;
+			sourceTree = "<group>";
+		};
+		09BD22D918DD2B940086369A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09BD22DA18DD2B940086369A /* BeerTourTests-Info.plist */,
+				09BD22DB18DD2B940086369A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09BD22AC18DD2B940086369A /* BeerTour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BD22E218DD2B940086369A /* Build configuration list for PBXNativeTarget "BeerTour" */;
+			buildPhases = (
+				09BD22A918DD2B940086369A /* Sources */,
+				09BD22AA18DD2B940086369A /* Frameworks */,
+				09BD22AB18DD2B940086369A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeerTour;
+			productName = BeerTour;
+			productReference = 09BD22AD18DD2B940086369A /* BeerTour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09BD22D018DD2B940086369A /* BeerTourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BD22E518DD2B940086369A /* Build configuration list for PBXNativeTarget "BeerTourTests" */;
+			buildPhases = (
+				09BD22CD18DD2B940086369A /* Sources */,
+				09BD22CE18DD2B940086369A /* Frameworks */,
+				09BD22CF18DD2B940086369A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BD22D718DD2B940086369A /* PBXTargetDependency */,
+			);
+			name = BeerTourTests;
+			productName = BeerTourTests;
+			productReference = 09BD22D118DD2B940086369A /* BeerTourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09BD22A518DD2B940086369A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Razormoose LLC";
+				TargetAttributes = {
+					09BD22D018DD2B940086369A = {
+						TestTargetID = 09BD22AC18DD2B940086369A;
+					};
+				};
+			};
+			buildConfigurationList = 09BD22A818DD2B940086369A /* Build configuration list for PBXProject "BeerTour" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09BD22A418DD2B940086369A;
+			productRefGroup = 09BD22AE18DD2B940086369A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09BD22AC18DD2B940086369A /* BeerTour */,
+				09BD22D018DD2B940086369A /* BeerTourTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09BD22AB18DD2B940086369A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BD22CC18DD2B940086369A /* Images.xcassets in Resources */,
+				09BD22BB18DD2B940086369A /* InfoPlist.strings in Resources */,
+				09BD22C418DD2B940086369A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BD22CF18DD2B940086369A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BD22DD18DD2B940086369A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09BD22A918DD2B940086369A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BD22CA18DD2B940086369A /* SecondViewController.m in Sources */,
+				09BD22C118DD2B940086369A /* AppDelegate.m in Sources */,
+				09BD22C718DD2B940086369A /* FirstViewController.m in Sources */,
+				09BD22BD18DD2B940086369A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BD22CD18DD2B940086369A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BD22DF18DD2B940086369A /* BeerTourTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09BD22D718DD2B940086369A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BD22AC18DD2B940086369A /* BeerTour */;
+			targetProxy = 09BD22D618DD2B940086369A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09BD22B918DD2B940086369A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BD22BA18DD2B940086369A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		09BD22C218DD2B940086369A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BD22C318DD2B940086369A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09BD22DB18DD2B940086369A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BD22DC18DD2B940086369A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09BD22E018DD2B940086369A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09BD22E118DD2B940086369A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09BD22E318DD2B940086369A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerTour/BeerTour-Prefix.pch";
+				INFOPLIST_FILE = "BeerTour/BeerTour-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09BD22E418DD2B940086369A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerTour/BeerTour-Prefix.pch";
+				INFOPLIST_FILE = "BeerTour/BeerTour-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		09BD22E618DD2B940086369A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerTour.app/BeerTour";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerTour/BeerTour-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BeerTourTests/BeerTourTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		09BD22E718DD2B940086369A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerTour.app/BeerTour";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerTour/BeerTour-Prefix.pch";
+				INFOPLIST_FILE = "BeerTourTests/BeerTourTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09BD22A818DD2B940086369A /* Build configuration list for PBXProject "BeerTour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BD22E018DD2B940086369A /* Debug */,
+				09BD22E118DD2B940086369A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BD22E218DD2B940086369A /* Build configuration list for PBXNativeTarget "BeerTour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BD22E318DD2B940086369A /* Debug */,
+				09BD22E418DD2B940086369A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09BD22E518DD2B940086369A /* Build configuration list for PBXNativeTarget "BeerTourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BD22E618DD2B940086369A /* Debug */,
+				09BD22E718DD2B940086369A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09BD22A518DD2B940086369A /* Project object */;
+}
