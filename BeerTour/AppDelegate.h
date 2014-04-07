@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppController.h"
+#import "Logging.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
