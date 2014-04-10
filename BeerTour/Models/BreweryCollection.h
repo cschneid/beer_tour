@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Brewery.h"
-#import "BreweryModel.h"
 
 @interface BreweryCollection : NSObject
-+(void)seedBreweries;
 +(NSArray*)allBreweries;
 @end

@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle.h>
 
-@interface Brewery : NSObject
-
--(id)initWithName:(NSString*)name;
+@interface Brewery : MTLModel
 
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *street;
+@property (strong, nonatomic) NSString *city;
+@property (strong, nonatomic) NSString *zip;
+@property (strong, nonatomic) NSString *website;
+@property (strong, nonatomic) NSNumber *latitude;
+@property (strong, nonatomic) NSNumber *longitude;
 
 @end

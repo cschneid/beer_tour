@@ -7,15 +7,18 @@
 //
 
 #import "BreweryCollection.h"
-#import "AppDelegate.h"
+
 @implementation BreweryCollection
 
 +(NSArray*)allBreweries {
+  
+  NSError *unchecked_error; // Screw checking errors!
+
   return @[
-            [[Brewery alloc] initWithName:@"Pateros"]
-          , [[Brewery alloc] initWithName:@"New Belgium"]
-          , [[Brewery alloc] initWithName:@"Fort Collins Brewery"]
-          ];
+      [Brewery modelWithDictionary:@{ @"name" : @"Pateros" } error:&unchecked_error]
+    , [Brewery modelWithDictionary:@{ @"name" : @"New Belgium" } error:&unchecked_error]
+    , [Brewery modelWithDictionary:@{ @"name" : @"Fort Collins Brewery" } error:&unchecked_error]
+   ];
 }
 
 @end

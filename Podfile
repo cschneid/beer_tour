@@ -3,6 +3,7 @@ platform :ios, "7.0"
 
 pod 'CocoaLumberjack'
 pod 'AFNetworking'
+pod 'Mantle'
 
 target "BeerTourTests", :exclusive => true do
   pod 'Kiwi/XCTest'

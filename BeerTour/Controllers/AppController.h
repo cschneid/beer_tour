@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BreweryDetailController.h"
 #import "ListController.h"
+#import "ListNavController.h"
 #import "MapController.h"
 
 @interface AppController : UITabBarController

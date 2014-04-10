@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0366F19623F4440D8166CBEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916FF9DEC7024FFE95C825D5 /* libPods.a */; };
+		09502B8318F631E800428DBF /* ListNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09502B8218F631E800428DBF /* ListNavController.m */; };
+		09502B8618F6420200428DBF /* UIViewController+ChildControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 09502B8518F6420200428DBF /* UIViewController+ChildControllers.m */; };
 		09BC268718DE0D97003E428C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BC268618DE0D97003E428C /* AppController.m */; };
 		09BC268E18DE0E18003E428C /* Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BC268D18DE0E18003E428C /* Logging.m */; };
 		09BD22B118DD2B940086369A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BD22B018DD2B940086369A /* Foundation.framework */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09502B8118F631E800428DBF /* ListNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListNavController.h; path = Controllers/List/ListNavController.h; sourceTree = "<group>"; };
+		09502B8218F631E800428DBF /* ListNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListNavController.m; path = Controllers/List/ListNavController.m; sourceTree = "<group>"; };
+		09502B8418F6420200428DBF /* UIViewController+ChildControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ChildControllers.h"; sourceTree = "<group>"; };
+		09502B8518F6420200428DBF /* UIViewController+ChildControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ChildControllers.m"; sourceTree = "<group>"; };
 		09BC268518DE0D97003E428C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Controllers/AppController.h; sourceTree = "<group>"; };
 		09BC268618DE0D97003E428C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Controllers/AppController.m; sourceTree = "<group>"; };
 		09BC268C18DE0E18003E428C /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = Services/Logging.h; sourceTree = "<group>"; };
@@ -114,15 +120,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09502B8018F631AA00428DBF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				09EED9BA18DE2E2200C132E3 /* ListController.h */,
+				09EED9BB18DE2E2200C132E3 /* ListController.m */,
+				09502B8118F631E800428DBF /* ListNavController.h */,
+				09502B8218F631E800428DBF /* ListNavController.m */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
 		09BC268418DE0D79003E428C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				09502B8018F631AA00428DBF /* List */,
 				09BC268518DE0D97003E428C /* AppController.h */,
 				09BC268618DE0D97003E428C /* AppController.m */,
 				09EED9B718DE2E0900C132E3 /* MapController.h */,
 				09EED9B818DE2E0900C132E3 /* MapController.m */,
-				09EED9BA18DE2E2200C132E3 /* ListController.h */,
-				09EED9BB18DE2E2200C132E3 /* ListController.m */,
 				09EED9A118DE204500C132E3 /* BreweryDetailController.h */,
 				09EED9A218DE204500C132E3 /* BreweryDetailController.m */,
 			);
@@ -243,6 +259,8 @@
 		09EED9AA18DE243400C132E3 /* Ext */ = {
 			isa = PBXGroup;
 			children = (
+				09502B8418F6420200428DBF /* UIViewController+ChildControllers.h */,
+				09502B8518F6420200428DBF /* UIViewController+ChildControllers.m */,
 				09EED9AE18DE246F00C132E3 /* UIView+AutoLayout.h */,
 				09EED9AF18DE246F00C132E3 /* UIView+AutoLayout.m */,
 			);
@@ -413,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EED9BC18DE2E2200C132E3 /* ListController.m in Sources */,
+				09502B8618F6420200428DBF /* UIViewController+ChildControllers.m in Sources */,
 				09EED9A618DE219900C132E3 /* Brewery.m in Sources */,
 				09EED9A318DE204500C132E3 /* BreweryDetailController.m in Sources */,
 				09BD22C118DD2B940086369A /* AppDelegate.m in Sources */,
@@ -424,6 +443,7 @@
 				09EED9B018DE246F00C132E3 /* UIView+AutoLayout.m in Sources */,
 				09EED9BF18DE50D000C132E3 /* BreweryCollection.m in Sources */,
 				09BC268E18DE0E18003E428C /* Logging.m in Sources */,
+				09502B8318F631E800428DBF /* ListNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

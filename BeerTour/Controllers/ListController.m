@@ -8,7 +8,7 @@
 
 #import "ListController.h"
 
-@interface ListController ()
+@interface ListController () <UITableViewDelegate>
 
 @end
 
@@ -19,7 +19,6 @@
 
 - (id) init {
   if (self = [super init]) {
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"List" image:[UIImage imageNamed:@"list"] selectedImage:[UIImage imageNamed:@"list"]];
   }
   return self;
 }
@@ -29,9 +28,13 @@
   dataSource = [[BreweryListDataSource alloc] initWithArray:[BreweryCollection allBreweries]];
   self.view.translatesAutoresizingMaskIntoConstraints = NO;
   
+  [self.view setBackgroundColor:[UIColor orangeColor]];
   [self.view addSubview:[self buildTableView]];
-  [self applyLayout];
   [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [self applyLayout];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +48,7 @@
 {
   tableView = [[UITableView alloc] init];
   tableView.dataSource = dataSource;
+  tableView.delegate = self;
   tableView.translatesAutoresizingMaskIntoConstraints = NO;
   return tableView;
 }
@@ -61,5 +65,14 @@
   [tableView pinToSuperviewEdges:JRTViewPinLeftEdge | JRTViewPinRightEdge | JRTViewPinBottomEdge inset:0];
   [tableView pinToSuperviewEdges:JRTViewPinTopEdge inset:20];
 }
+
+#pragma mark UITableViewDelegate Implementation
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSUInteger rowIndex = [indexPath indexAtPosition:0];
+
+}
+
 
 @end

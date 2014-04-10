@@ -7,32 +7,39 @@
 //
 
 #import "AppController.h"
+#import "UIViewController+ChildControllers.h"
 
-@interface AppController ()
+@interface AppController () <UITabBarControllerDelegate>
 
 @end
 
-@implementation AppController
+@implementation AppController {
+  UIViewController *listTab;
+  UIViewController *mapTab;
+}
 
 - (id)init {
-  if (self = [super init])
-  {
-    ListController *tab1 = [ListController new];
-    MapController  *tab2 = [MapController new];
+  if (self = [super init]) {
+    listTab = [ListNavController new];
+    mapTab  = [MapController new];
     
     self.viewControllers = @[
-                              tab1
-                            , tab2
+                              listTab
+                            , mapTab
                             ];
-    self.selectedViewController = tab1;
+    self.delegate = self;
+    [self setSelectedViewController:listTab];
+
   }
+  
   return self;
 }
 
-- (void)viewDidLoad
+
+- (void)viewWillAppear:(BOOL)animated
 {
   [self.view setBackgroundColor:[UIColor whiteColor]];
-  [super viewDidLoad];
+  [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning

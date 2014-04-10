@@ -1,8 +1,6 @@
 #!/bin/sh
 set -e
 
-export PATH=$PATH:/usr/bin:/bin
-
 RESOURCES_TO_COPY=${PODS_ROOT}/resources-to-copy-${TARGETNAME}.txt
 > "$RESOURCES_TO_COPY"
 
