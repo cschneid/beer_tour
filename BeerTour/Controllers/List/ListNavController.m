@@ -21,6 +21,7 @@
   if (self = [super init]) {
     rootController = [ListController new];
     [self pushViewController:rootController animated:NO];
+    
     self.tabBarItem = [self createTabBarItem];
   }
   return self;
@@ -28,13 +29,9 @@
 
 - (void)viewDidLoad
 {
-  self.view.translatesAutoresizingMaskIntoConstraints = NO;
+  self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
   self.view.backgroundColor = [UIColor redColor];
   [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-  [self.view pinToSuperviewEdges:JRTViewPinAllEdges inset:0];
 }
 
 - (UITabBarItem*)createTabBarItem {

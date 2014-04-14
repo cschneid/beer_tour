@@ -14,7 +14,6 @@
 
 @implementation BreweryDetailController {
   Brewery *brewery;
-  
   UILabel *titleLabel;
 }
 
@@ -22,7 +21,7 @@
   if (self = [super init]) {
     brewery = b;
     self.title = brewery.name;
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:brewery.name image:[UIImage imageNamed:@"map"] selectedImage:[UIImage imageNamed:@"map"]];
+    
   }
   return self;
 }
@@ -31,10 +30,11 @@
 {
   self.view.translatesAutoresizingMaskIntoConstraints = NO;
   [self.view addSubview:[self buildTitleLabel]];
-
   [self applyLayout];
-  
+
+  self.view.backgroundColor = [UIColor whiteColor];
   [super viewDidLoad];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,7 +49,7 @@
   titleLabel = [[UILabel alloc] init];
   titleLabel.text = brewery.name;
   titleLabel.textColor = [UIColor blackColor];
-  titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+  titleLabel.translatesAutoresizingMaskIntoConstraints = YES;
   return titleLabel;
 }
 
@@ -63,10 +63,7 @@
 - (void)layoutTitleLabel
 {
   [titleLabel centerInContainerOnAxis:NSLayoutAttributeCenterX];
-  [titleLabel pinToSuperviewEdges:JRTViewPinTopEdge inset:50];
+  [titleLabel pinToSuperviewEdges:JRTViewPinTopEdge inset:0];
 }
-
-
-
 
 @end

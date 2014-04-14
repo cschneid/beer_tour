@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BreweryListDataSource.h"
 #import "BreweryCollection.h"
+#import "BreweryDetailController.h"
 
 @interface ListController : UIViewController
 

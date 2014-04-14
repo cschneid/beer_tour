@@ -14,20 +14,14 @@
 
 @implementation ListController {
   UITableView *tableView;
-  id<UITableViewDataSource> dataSource;
-}
-
-- (id) init {
-  if (self = [super init]) {
-  }
-  return self;
+  BreweryListDataSource *dataSource;
 }
 
 - (void)viewDidLoad
 {
   dataSource = [[BreweryListDataSource alloc] initWithArray:[BreweryCollection allBreweries]];
-  self.view.translatesAutoresizingMaskIntoConstraints = NO;
-  
+//  self.view.translatesAutoresizingMaskIntoConstraints = NO;
+  self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   [self.view setBackgroundColor:[UIColor orangeColor]];
   [self.view addSubview:[self buildTableView]];
   [super viewDidLoad];
@@ -63,7 +57,7 @@
 - (void)layoutTableView
 {
   [tableView pinToSuperviewEdges:JRTViewPinLeftEdge | JRTViewPinRightEdge | JRTViewPinBottomEdge inset:0];
-  [tableView pinToSuperviewEdges:JRTViewPinTopEdge inset:20];
+  [tableView pinToSuperviewEdges:JRTViewPinTopEdge inset:0];
 }
 
 #pragma mark UITableViewDelegate Implementation
@@ -71,7 +65,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   NSUInteger rowIndex = [indexPath indexAtPosition:0];
-
+  Brewery *brewery = [dataSource breweryForIndex:rowIndex];
+  BreweryDetailController *detailController = [[BreweryDetailController alloc] initWithBrewery:brewery];
+  [[self navigationController] pushViewController:detailController animated:YES];
 }
 
 

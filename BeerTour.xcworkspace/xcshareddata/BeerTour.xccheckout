@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8558528A-976A-440A-8836-5B02ADBA6CEC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BeerTour</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CC769661-E6CC-43A0-8DDA-553AB8BB453C</key>
+		<string>ssh://github.com/cschneid/beer_tour.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BeerTour.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CC769661-E6CC-43A0-8DDA-553AB8BB453C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/cschneid/beer_tour.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CC769661-E6CC-43A0-8DDA-553AB8BB453C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC769661-E6CC-43A0-8DDA-553AB8BB453C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BeerTour</string>
+		</dict>
+	</array>
+</dict>
+</plist>

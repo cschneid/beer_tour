@@ -12,6 +12,7 @@
 @interface BreweryListDataSource : NSObject <UITableViewDataSource>
 
 -(id)initWithArray:(NSArray *)arr;
+-(Brewery*)breweryForIndex:(NSUInteger)index;
 
 @property (strong, nonatomic) NSArray *cells;
 

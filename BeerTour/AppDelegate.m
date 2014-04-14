@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ListNavController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,7 @@
 {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   AppController *appController = [AppController new];
+
   self.window.rootViewController = appController;
   
   // Override point for customization after application launch.

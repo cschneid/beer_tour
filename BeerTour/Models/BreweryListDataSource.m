@@ -19,7 +19,7 @@
     NSMutableArray *newCells = @[].mutableCopy;
     for (Brewery *obj in arr) {
       UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-      
+      cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
       cell.textLabel.text = obj.name;
       
       [newCells addObject:cell];
@@ -28,6 +28,11 @@
     _cells = [[NSArray alloc]initWithArray:newCells];
   }
   return self;
+}
+
+-(Brewery*)breweryForIndex:(NSUInteger)index
+{
+  return breweries[index];
 }
 
 #pragma mark UITableViewDataSource
